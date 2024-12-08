@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Big Difference Scheme Calculator</h1>
+    </div>
+
+      <div class="row_container">
+        <div class="input_container">
+          <label for="billing_cycle">Billing Cycle</label>
+          <select name="billing_cycle" class="input_style-1" id="billing_cycle">
+            <option value="unmeasured">Unmeasured</option>
+            <option value="metered">Metered</option>
+            <option value="assessed">Assessed</option>
+          </select>
+        </div>
+        <div class="input_container">
+          <label for="bds_start_date">BDS Start Date</label>
+          <input
+            type="date"
+            class="bds_start_date input_style-1"
+            value="2024-05-12"
+            id="bds_start_date"
+          />
+        </div>
+        <div class="input_container">
+          <label for="bds_discount">BDS Discount</label>
+          <select name="bds_discount" class="input_style-1" id="bds_discount">
+            <option value="band_1">90% (Band 1)</option>
+            <option value="band_2">80% (Band 2)</option>
+            <option value="band_3">70% (Band 3)</option>
+            <option value="band_4">60% (Band 4)</option>
+            <option value="band_5">50% (Band 5)</option>
+            <option value="band_6">40% (Band 6)</option>
+            <option value="band_7">30% (Band 7)</option>
+          </select>
+        </div>
+        <div class="input_container">
+          <label for="balance_input">Balance</label>
+          <input
+            type="number"
+            class="input_style-1 input_style-num balance_input"
+            id="balance_input"
+          />
+        </div>
+        <div class="input_container">
+          <label for="billed_date">Billed up to Date</label>
+          <input type="date" class="billed_date input_style-1" id="billed_date" />
+        </div>
+        <div class="input_container">
+          <label for="payment_start_date">Payment Plan Start</label>
+          <input type="date" class="payment_start_date input_style-1" id="payment_start_date" />
+        </div>
+        <input type="button" class="submit_btn submit_bds_payment" value="Calc BDS Payment" />
+      </div>
+      <div class="bds_charge"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
